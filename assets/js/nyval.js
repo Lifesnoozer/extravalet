@@ -207,7 +207,6 @@
 
 		current++;
 
-		console.log(current, max);
 		if (current - 1 === max) {
 			showBlank();
 			return;
