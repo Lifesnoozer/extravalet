@@ -7,6 +7,14 @@
 		<meta name="description" content="En enkel undersökning för att du ska veta vilket parti du borde rösta på i extravalet 2015.">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="assets/css/nyval.css">
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 	</head>
 	<body class="quiz">
 		<div class="question content">
@@ -16,6 +24,8 @@
 				<li><a href="#" class="answer" data-index="1">Jag vet redan, tack ändå.</a></li>
 			</ol>
 		</div>
+
+		<div class="fb-share-button" data-href="http://extra-valet.se" data-layout="button_count"></div>
 
 		<a href="om-extravalet-se.html" title="Om extra-valet.se" class="help">?</a>
 
