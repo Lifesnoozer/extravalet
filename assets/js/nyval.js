@@ -217,7 +217,7 @@
 		var a = '';
 
 		for (var i = 0; i < questions[current].options.length; i++) {
-			a += '<li class="answer" data-index="' + i + '">' + questions[current].options[i] + '</li>';
+			a += '<li><a href="#" class="answer" data-index="' + i + '">' + questions[current].options[i] + '</a></li>';
 		}
 
 		_qWrapper.append('<ol>' + a + '</ol>');
@@ -233,7 +233,9 @@
 		_qWrapper.append('<div class="punchline">(Det är sådana som du som förstör Sverige.)</div>');
 	};
 
-	var checkAnswer = function() {
+	var checkAnswer = function(e) {
+		e.preventDefault();
+
 		if (parseInt($(this).data('index'), 10) !== parseInt(questions[current].right, 10)) {
 			if (parseInt(questions[current].right, 10) === -1 && parseInt($(this).data('index'), 10) !== 0) {
 				showBlank();
