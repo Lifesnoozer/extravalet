@@ -81,7 +81,7 @@
 
 	var questions = [
 		{
-			question: 'Extravalet 2015 - Vad ska jag rösta på?',
+			question: 'Extravalet <s>2015</s> 2019 - Vad ska jag rösta på?',
 			options: [
 				'Hjälp mig!',
 				'Jag vet redan, tack ändå.',
